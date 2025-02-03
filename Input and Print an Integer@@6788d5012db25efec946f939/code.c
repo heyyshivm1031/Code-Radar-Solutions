@@ -4,5 +4,5 @@ int main(){
     int a;
     scanf("%d" , &a);
     printf("You entered: %d\n", a);
-    resturn 0;
+    return 0;
 }
