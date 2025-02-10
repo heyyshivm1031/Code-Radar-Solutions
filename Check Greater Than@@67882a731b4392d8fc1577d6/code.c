@@ -10,9 +10,9 @@ int main() {
     scanf("%d", &num2);
 
     if (num1 > num2) {
-        printf("%d is greater than %d\n", num1, num2);
+        printf("True");
     } else {
-        printf("%d is not greater than %d\n", num1, num2);
+        printf("False");
     }
 
     return 0;
