@@ -3,7 +3,7 @@
 int main() {
     int a,b;
     scanf("%d %d",&a,&b);
-     if (num1 > num2) {
+     if (a>b){
         printf("True");
     } else {
         printf("False");
