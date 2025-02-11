@@ -11,5 +11,5 @@ int main(){
     else{
         max = c;
     }
-    return 0;
+    return max;
 }
