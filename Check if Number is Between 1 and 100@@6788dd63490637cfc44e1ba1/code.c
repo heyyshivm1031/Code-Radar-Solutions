@@ -2,7 +2,7 @@
 int main(){
     int a;
     scanf("%d", &a);
-    if(a > 100 ==0){
+    if(a > 100 == 0){
         printf("In Range");
     }
     else{
