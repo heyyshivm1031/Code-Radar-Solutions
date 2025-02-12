@@ -12,7 +12,7 @@ int main(){
             }
         }
     if (i * i > n) {
-        printf("Prime Number");
+        printf("Prime");
     }
     }
 
