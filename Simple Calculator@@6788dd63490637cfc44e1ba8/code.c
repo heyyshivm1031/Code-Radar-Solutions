@@ -26,7 +26,7 @@ int main() {
                 printf("%d\n", num1 / num2);
             break;
         default:
-            printf("Error\n");
+            printf("error\n");
     }
 
     return 0;
