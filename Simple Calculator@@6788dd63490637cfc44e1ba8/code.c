@@ -21,12 +21,12 @@ int main() {
             break;
         case '/':
             if (num2 == 0)
-                printf("Error\n");
+                printf("error\n");
             else
                 printf("%d\n", num1 / num2);
             break;
         default:
-            printf("error\n");
+            printf("Error\n");
     }
 
     return 0;
