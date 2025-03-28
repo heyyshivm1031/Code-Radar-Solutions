@@ -33,7 +33,6 @@ int main() {
     int n, k;
 
     // Input array size and elements
-    printf("");
     scanf("%d", &n);
     
     int arr[n];
