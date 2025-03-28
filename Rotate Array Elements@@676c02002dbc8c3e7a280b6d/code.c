@@ -33,7 +33,7 @@ int main() {
     int n, k;
 
     // Input array size and elements
-    printf("Enter the number of elements: ");
+    printf("");
     scanf("%d", &n);
     
     int arr[n];
@@ -43,12 +43,12 @@ int main() {
     }
 
     // Input K (rotation count)
-    printf("Enter rotation count (K): ");
+    printf("");
     scanf("%d", &k);
 
     // Rotate and print result
     rotateArray(arr, n, k);
-    printf("Rotated array: ");
+    printf("");
     printArray(arr, n);
 
     return 0;
