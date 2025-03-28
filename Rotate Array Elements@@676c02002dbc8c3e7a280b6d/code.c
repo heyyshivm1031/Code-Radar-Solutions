@@ -21,33 +21,14 @@ void rotateArray(int arr[], int n, int k) {
     reverse(arr, k, n - 1);     // Step 3: Reverse remaining elements
 }
 
-// Function to print the array
+// Function to print the array in vertical format
 void printArray(int arr[], int n) {
-    printf("\n"); // Ensure output starts on a new line
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);  
+        printf("%d\n", arr[i]);  // Print each number on a new line
     }
-    printf("\n"); // Ensure output ends with a new line
 }
 
 int main() {
     int n, k;
 
-    // Input array size and elements
-    scanf("%d", &n);
-    
-    int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    // Input K (rotation count)
-    scanf("%d", &k);
-
-    // Rotate and print result
-    rotateArray(arr, n, k);
-    printArray(arr, n); // Ensure proper spacing and newline in output
-
-    return 0;
-}
+    // Input
