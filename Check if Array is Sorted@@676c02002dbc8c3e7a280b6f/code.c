@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h> // For malloc
 
 int isSorted(int arr[], int n) {
-    int asc = 1, desc = 1; // Flags for ascending and descending
+    int asc = 1, desc = 1;
 
     for (int i = 0; i < n - 1; i++) {
         if (arr[i] > arr[i + 1]) {
@@ -12,17 +13,24 @@ int isSorted(int arr[], int n) {
         }
     }
 
-    if (asc || desc) // If either flag is still 1, it's sorted
-        return 1;
-    return 0;
+    return asc || desc; // Returns 1 if sorted, 0 if not
 }
 
 int main() {
     int n;
     scanf("%d", &n);
     
-    int arr[n];
-    printf("%d", n);
+    if (n <= 0) {
+        printf("Invalid array size\n");
+        return 1; // Exit if input is invalid
+    }
+
+    int *arr = (int *)malloc(n * sizeof(int)); // Dynamically allocate array
+    if (arr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1; // Exit if memory allocation fails
+    }
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -32,5 +40,6 @@ int main() {
     else
         printf("Not Sorted\n");
 
+    free(arr); // Free allocated memory
     return 0;
 }
