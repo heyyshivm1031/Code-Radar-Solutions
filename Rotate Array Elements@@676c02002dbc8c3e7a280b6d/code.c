@@ -43,12 +43,10 @@ int main() {
     }
 
     // Input K (rotation count)
-    printf("");
     scanf("%d", &k);
 
     // Rotate and print result
     rotateArray(arr, n, k);
-    printf("");
     printArray(arr, n);
 
     return 0;
