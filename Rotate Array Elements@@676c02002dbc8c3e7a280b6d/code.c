@@ -31,4 +31,21 @@ void printArray(int arr[], int n) {
 int main() {
     int n, k;
 
-    // Input
+    // Input array size and elements
+    scanf("%d", &n);
+    
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Input K (rotation count)
+    scanf("%d", &k);
+
+    // Rotate and print result
+    rotateArray(arr, n, k);
+    printArray(arr, n); // Print in vertical format
+
+    return 0;
+}
