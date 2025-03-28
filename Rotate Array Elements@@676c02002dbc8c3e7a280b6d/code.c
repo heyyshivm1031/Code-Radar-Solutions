@@ -24,7 +24,7 @@ void rotateArray(int arr[], int n, int k) {
 // Function to print the array
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d ", arr[i]);  // Ensure space between numbers
     }
     printf("\n");
 }
@@ -36,7 +36,7 @@ int main() {
     scanf("%d", &n);
     
     int arr[n];
-    printf("%d", n);
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -46,7 +46,8 @@ int main() {
 
     // Rotate and print result
     rotateArray(arr, n, k);
-    printArray(arr, n);
+    printArray(arr, n); // Ensure proper spacing in output
 
     return 0;
 }
+
