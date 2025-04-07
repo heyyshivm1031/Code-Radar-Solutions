@@ -20,13 +20,12 @@ int main() {
 
     scanf("%d", &n);
 
-    printf("\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int peak = findFirstPeak(arr, n);
-    printf("%d\n", peak);
+    printf("%d", peak);
 
     return 0;
 }
