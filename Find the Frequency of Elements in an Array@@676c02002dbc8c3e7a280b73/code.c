@@ -24,7 +24,6 @@ int main() {
         }
     }
 
-    printf("\nElement\tFrequency\n");
     for (i = 0; i < n; i++) {
         if (freq[i] != 0) {
             printf("%d\t%d\n", arr[i], freq[i]);
