@@ -35,14 +35,12 @@ void displayLeaderboard(struct Player players[], int n) {
 int main() {
     struct Player players[MAX_PLAYERS];
     int n;
-
-    printf("Enter number of players: ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; ++i) {
-        printf("Enter name of player %d: ", i + 1);
+        printf("%d: ", i + 1);
         scanf("%s", players[i].name);
-        printf("Enter score of %s: ", players[i].name);
+        printf("%s: ", players[i].name);
         scanf("%d", &players[i].score);
     }
 
